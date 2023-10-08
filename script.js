@@ -28,3 +28,4 @@ function unflipImage() {
     flipCardInner.style.transformOrigin = "center bottom";
     document.querySelector(".fall-over-inner").style.transform = "rotateX(0deg)";
 }
+
