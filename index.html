@@ -4,24 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Book Cover</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-
-    hello world
-    
-
-
-
-
-
-<script src="index.js"></script>
+    <div class="book-cover">
+        <div class="Back">
+            <div class="book-title">The Great Indoors</div>
+            <div class="subtitle">The Surprising Science of How Buildings<br>Shape Our Behavior, Health, and Happiness
+            </div>
+            <div class="author" id="wikipedia-trigger">Emily Anthes</div>
+                </div>
+            </div>
+            <div class="cover-image">
+                <div class="image-container">
+                    <img id="changing-image" src="Clock 1@4x.png" alt="Changing Image">
+                </div>
+                <div class="switch">
+                    <img id="image" src="LampOff.png" alt="Image" onmouseover="changeImage()"
+                        onmouseout="restoreImage()">
+                </div>
+            </div>
+            <div class="image-flip">
+                <div class="fall-over-card" onmouseover="flipImage()" onmouseout="unflipImage()">
+                    <div class="fall-over-inner">
+                        <div class="fall-over-front">
+                            <img src="cat4x.png" alt="Front Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
 </body>
+
 </html>
